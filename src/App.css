@@ -1,0 +1,72 @@
+#root {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.btn {
+   @apply text-base font-medium rounded-lg px-8 !leading-none h-12;
+}
+
+.btn--primary {
+   @apply bg-sky-500 text-white;
+}
+
+.btn--secondary {
+   @apply bg-slate-100 text-slate-900;
+}
+
+.label-span {
+   @apply block mb-1 text-sm font-medium text-gray-900 text-left;
+}
+
+.input {
+   @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.messages {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+
+   max-height: 750px;
+   overflow-y: auto;
+}
+
+.message {
+   display: block;
+   width: 200px;
+}
+
+.message-name {
+   margin-bottom: 4px;
+   display: block;
+   @apply text-gray-400;
+}
+
+.my-message {
+   align-self: end;
+}
+
+.other-message {
+   align-self: start;
+}
+
+.message-text {
+   border-radius: 12px;
+   padding: 12px;
+   line-height: 1;
+}
+
+.my-message .message-text {
+   @apply bg-green-400;
+}
+
+.other-message .message-text {
+   @apply bg-red-400;
+}
+
+.status {
+   font-size: 16px;
+}
