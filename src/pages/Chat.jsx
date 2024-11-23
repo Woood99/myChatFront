@@ -6,7 +6,7 @@ import Input from '../components/Input';
 import Button from '../components/Button';
 import { TitleDefault } from '../Elements/RootElements';
 
-const socket = socketIO.connect(`http://localhost:5000`);
+const socket = socketIO.connect('https://mychatback.onrender.com');
 
 const Chat = () => {
    const [cookies, setCookie, removeCookie] = useCookies();
